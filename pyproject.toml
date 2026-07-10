@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omnicanon"
+version = "0.1.0"
+description = "Citation-verified retrieval, benchmarking, search, and OCR infrastructure for the world's sacred texts"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Aravind Balaji" }]
+requires-python = ">=3.10"
+keywords = ["rag", "retrieval", "llm-evaluation", "religion", "scripture", "ocr", "benchmark"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Religion",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Indexing",
+]
+# Core has ZERO runtime dependencies by design — pure stdlib.
+dependencies = []
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.29"]
+ocr = ["pillow>=10.0", "pytesseract>=0.3.10"]
+llm = ["anthropic>=0.34", "openai>=1.30"]
+dev = ["pytest>=8.0", "ruff>=0.4", "httpx>=0.27"]
+
+[project.scripts]
+omnicanon = "omnicanon.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/AravindB98/omnicanon"
+Issues = "https://github.com/AravindB98/omnicanon/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+omnicanon = ["corpus/data/*.json", "bench/tasks/*.jsonl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

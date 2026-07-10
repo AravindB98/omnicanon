@@ -1,0 +1,22 @@
+{
+  "slug": "quran",
+  "title": "The Meaning of the Glorious Koran (sample excerpt)",
+  "tradition": "Islam",
+  "language": "en",
+  "translation": "Marmaduke Pickthall (1930)",
+  "license": "Public domain",
+  "_note": "Small sample for tests and demos. Run scripts/ingest.py to fetch the full text.",
+  "verses": [
+    { "id": "quran:1.1", "text": "In the name of Allah, the Beneficent, the Merciful." },
+    { "id": "quran:1.2", "text": "Praise be to Allah, Lord of the Worlds," },
+    { "id": "quran:1.3", "text": "The Beneficent, the Merciful." },
+    { "id": "quran:1.4", "text": "Owner of the Day of Judgment," },
+    { "id": "quran:1.5", "text": "Thee (alone) we worship; Thee (alone) we ask for help." },
+    { "id": "quran:1.6", "text": "Show us the straight path," },
+    { "id": "quran:1.7", "text": "The path of those whom Thou hast favoured; Not (the path) of those who earn Thine anger nor of those who go astray." },
+    { "id": "quran:112.1", "text": "Say: He is Allah, the One!" },
+    { "id": "quran:112.2", "text": "Allah, the eternally Besought of all!" },
+    { "id": "quran:112.3", "text": "He begetteth not nor was begotten." },
+    { "id": "quran:112.4", "text": "And there is none comparable unto Him." }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "dhammapada",
+  "title": "The Dhammapada (sample excerpt)",
+  "tradition": "Buddhism",
+  "language": "en",
+  "translation": "F. Max Müller (1881), Sacred Books of the East, Vol. X",
+  "license": "Public domain",
+  "_note": "Small sample for tests and demos. Run scripts/ingest.py to fetch the full text. Chapter numbers follow the Pali chapter (vagga) ordering.",
+  "verses": [
+    { "id": "dhammapada:1.1", "text": "All that we are is the result of what we have thought: it is founded on our thoughts, it is made up of our thoughts. If a man speaks or acts with an evil thought, pain follows him, as the wheel follows the foot of the ox that draws the carriage." },
+    { "id": "dhammapada:1.2", "text": "All that we are is the result of what we have thought: it is founded on our thoughts, it is made up of our thoughts. If a man speaks or acts with a pure thought, happiness follows him, like a shadow that never leaves him." },
+    { "id": "dhammapada:1.5", "text": "For hatred does not cease by hatred at any time: hatred ceases by love, this is an old rule." }
+  ]
+}

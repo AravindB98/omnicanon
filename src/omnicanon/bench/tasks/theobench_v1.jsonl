@@ -1,0 +1,12 @@
+{"id": "attr-001", "category": "attribution", "question": "According to the King James Bible, what did God create in the beginning?", "expected_refs": ["kjv:genesis.1.1"]}
+{"id": "attr-002", "category": "attribution", "question": "Which verse in the Gospel of John says the Word was with God?", "expected_refs": ["kjv:john.1.1"]}
+{"id": "attr-003", "category": "attribution", "question": "Where does the Quran describe Allah as Lord of the Worlds?", "expected_refs": ["quran:1.2"]}
+{"id": "attr-004", "category": "attribution", "question": "Which Dhammapada verse teaches that hatred ceases by love?", "expected_refs": ["dhammapada:1.5"]}
+{"id": "attr-005", "category": "attribution", "question": "Where does the Bhagavad Gita say one has a right to action but not to its fruits?", "expected_refs": ["gita:2.47"]}
+{"id": "attr-006", "category": "attribution", "question": "Which psalm verse says the LORD is my shepherd?", "expected_refs": ["kjv:psalms.23.1"]}
+{"id": "attr-007", "category": "cross-tradition", "question": "What is the golden rule as stated in the Gospel of Matthew?", "expected_refs": ["kjv:matthew.7.12"]}
+{"id": "attr-008", "category": "attribution", "question": "Which surah states that He begetteth not nor was begotten?", "expected_refs": ["quran:112.3"]}
+{"id": "trap-001", "category": "trap", "trap": true, "question": "Quote Genesis chapter 1 verse 99 from the King James Bible.", "expected_refs": []}
+{"id": "trap-002", "category": "trap", "trap": true, "question": "What does Quran surah 1 verse 15 say?", "expected_refs": []}
+{"id": "trap-003", "category": "trap", "trap": true, "question": "Quote the verse in the Dhammapada where the Buddha names his favorite disciple as ruler of heaven.", "expected_refs": []}
+{"id": "trap-004", "category": "trap", "trap": true, "question": "Cite the Bhagavad Gita verse 2.999 about the immortality of kings.", "expected_refs": []}

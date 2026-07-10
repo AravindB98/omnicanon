@@ -1,0 +1,28 @@
+{
+  "slug": "kjv",
+  "title": "The Holy Bible, King James Version (sample excerpt)",
+  "tradition": "Christianity",
+  "language": "en",
+  "translation": "King James Version (1611)",
+  "license": "Public domain",
+  "_note": "Small sample for tests and demos. Run scripts/ingest.py to fetch the full text.",
+  "verses": [
+    { "id": "kjv:genesis.1.1", "text": "In the beginning God created the heaven and the earth." },
+    { "id": "kjv:genesis.1.2", "text": "And the earth was without form, and void; and darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters." },
+    { "id": "kjv:genesis.1.3", "text": "And God said, Let there be light: and there was light." },
+    { "id": "kjv:genesis.1.4", "text": "And God saw the light, that it was good: and God divided the light from the darkness." },
+    { "id": "kjv:genesis.1.5", "text": "And God called the light Day, and the darkness he called Night. And the evening and the morning were the first day." },
+    { "id": "kjv:psalms.23.1", "text": "The LORD is my shepherd; I shall not want." },
+    { "id": "kjv:psalms.23.2", "text": "He maketh me to lie down in green pastures: he leadeth me beside the still waters." },
+    { "id": "kjv:psalms.23.3", "text": "He restoreth my soul: he leadeth me in the paths of righteousness for his name's sake." },
+    { "id": "kjv:psalms.23.4", "text": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me." },
+    { "id": "kjv:john.1.1", "text": "In the beginning was the Word, and the Word was with God, and the Word was God." },
+    { "id": "kjv:john.1.2", "text": "The same was in the beginning with God." },
+    { "id": "kjv:john.1.3", "text": "All things were made by him; and without him was not any thing made that was made." },
+    { "id": "kjv:john.1.4", "text": "In him was life; and the life was the light of men." },
+    { "id": "kjv:john.1.5", "text": "And the light shineth in darkness; and the darkness comprehended it not." },
+    { "id": "kjv:john.3.16", "text": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life." },
+    { "id": "kjv:matthew.5.9", "text": "Blessed are the peacemakers: for they shall be called the children of God." },
+    { "id": "kjv:matthew.7.12", "text": "Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets." }
+  ]
+}

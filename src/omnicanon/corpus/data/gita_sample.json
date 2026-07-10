@@ -1,0 +1,15 @@
+{
+  "slug": "gita",
+  "title": "The Bhagavad Gita (sample excerpt)",
+  "tradition": "Hinduism",
+  "language": "en",
+  "translation": "Kashinath Trimbak Telang (1882), Sacred Books of the East, Vol. VIII (sample lightly excerpted)",
+  "license": "Public domain",
+  "_note": "Small sample for tests and demos; wording should be re-verified against the printed SBE text during full ingestion via scripts/ingest.py.",
+  "verses": [
+    { "id": "gita:2.47", "text": "Your business is with action alone; not by any means with fruit. Let not the fruit of action be your motive to action. Let not your attachment be fixed on inaction." },
+    { "id": "gita:2.48", "text": "Having recourse to devotion, perform actions, casting off attachment, and being equable in success or ill-success; such equability is called devotion." },
+    { "id": "gita:4.7", "text": "Whensoever, O descendant of Bharata, piety languishes, and impiety is in the ascendant, I create myself." },
+    { "id": "gita:4.8", "text": "I am born age after age, for the protection of the good, for the destruction of evil-doers, and the establishment of piety." }
+  ]
+}
