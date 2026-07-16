@@ -133,3 +133,19 @@ Good first issues: add a TheoBench task for a tradition you know well, add a cor
 ## License
 
 [Apache-2.0](LICENSE). Bundled scripture texts are public-domain translations; each corpus file declares its translation and license.
+
+---
+
+## 🧒 Explain Like I'm 5
+
+A search engine for holy books that is physically unable to make quotes up: ask about the Bible, Quran, Torah, Gita and more, and every answer comes strictly from verified scripture text with exact verse citations. It also includes TheoBench — a test that grades AI models on how accurately they handle sacred texts.
+
+## 🧰 Tech Stack
+
+Python · multi-faith text corpus · zero-hallucination RAG (citation-verified) · TheoBench LLM benchmark
+
+## 🌍 Real-Life Applications
+
+- Students of religion comparing what different scriptures actually say
+- Faith communities building trustworthy scripture Q&A tools
+- Measuring LLM reliability on religious content (TheoBench)
