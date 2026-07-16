@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>omnicanon — Citation-verified AI for sacred texts</title>
+<meta name="description" content="Citation-verified AI for sacred texts — multi-faith corpus, zero-hallucination RAG, and the TheoBench LLM benchmark.">
+<style>
+:root{--accent:#d4a017;--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:72px 0 48px;text-align:center;background:radial-gradient(ellipse at top,color-mix(in srgb,var(--accent) 18%,transparent),transparent 65%)}
+h1{font-size:2.6rem;margin-bottom:8px}
+.emoji{font-size:3.2rem;display:block;margin-bottom:12px}
+.tagline{color:var(--muted);font-size:1.15rem;max-width:640px;margin:0 auto 24px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-ghost{border:1px solid var(--border);color:var(--text)}
+section{padding:40px 0;border-top:1px solid var(--border)}
+h2{font-size:1.5rem;margin-bottom:16px;color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.chip{display:inline-block;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:5px 14px;margin:4px;font-size:.88rem}
+ul.apps{list-style:none}ul.apps li{padding:8px 0 8px 28px;position:relative}
+ul.apps li:before{content:"✦";position:absolute;left:4px;color:var(--accent)}
+#demo{margin-top:8px}
+.demo-hint{color:var(--muted);font-size:.9rem;margin-bottom:14px}
+button.demo-btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:9px 18px;font-weight:600;cursor:pointer;font-size:.92rem;margin:4px 6px 4px 0}
+button.demo-btn.ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+input[type=range]{accent-color:var(--accent)}
+canvas{background:#0a0e14;border:1px solid var(--border);border-radius:8px;max-width:100%}
+.mono{font-family:ui-monospace,Menlo,monospace;font-size:.85rem}
+footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.9rem}
+footer a{color:var(--accent);text-decoration:none}
+.star-cta{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 25%,var(--card)),var(--card));border:1px solid var(--accent);border-radius:12px;padding:24px;text-align:center;margin-top:8px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<span class="emoji">📖</span>
+<h1>omnicanon</h1>
+<p class="tagline">Citation-verified AI for sacred texts — multi-faith corpus, zero-hallucination RAG, and the TheoBench LLM benchmark.</p>
+<div class="btns">
+<a class="btn btn-primary" href="https://github.com/AravindB98/omnicanon">View on GitHub</a>
+<a class="btn btn-ghost" href="#demo-sec">▶ Try the Demo</a>
+</div>
+</div></header>
+<div class="wrap">
+<section><h2>🧒 What is this? (Plain English)</h2><div class="card"><p>A search engine for holy books that is physically unable to make quotes up: ask about the Bible, Quran, Torah, Gita and more, and every answer comes strictly from verified scripture text with exact verse citations. It also includes TheoBench — a test that grades AI models on how accurately they handle sacred texts.</p></div></section>
+<section><h2>✨ Key Features</h2><div class="grid"><div class="card"><strong>Multi-faith corpus</strong><p style="color:var(--muted);margin-top:6px">Verified editions of major scriptures in one queryable corpus.</p></div><div class="card"><strong>Zero-hallucination RAG</strong><p style="color:var(--muted);margin-top:6px">Answers are built only from retrieved verses — every claim cited.</p></div><div class="card"><strong>TheoBench</strong><p style="color:var(--muted);margin-top:6px">A benchmark grading LLMs on scriptural accuracy.</p></div><div class="card"><strong>Comparative study</strong><p style="color:var(--muted);margin-top:6px">Ask one question across traditions side by side.</p></div></div></section>
+<section id="demo-sec"><h2>🕹️ Interactive Demo</h2>
+<p class="demo-hint">Ask a question — every sentence in the answer carries a verse citation. <em>(Illustrative in-browser simulation of what the real system does.)</em></p>
+<div class="card" id="demo"><select id="oc-q" class="mono" style="width:100%;padding:10px;background:#0a0e14;color:var(--text);border:1px solid var(--border);border-radius:8px">
+<option>What do scriptures say about forgiveness?</option><option>What is said about charity and giving?</option><option>How is patience described?</option></select>
+<button class="demo-btn" style="margin-top:10px" onclick="ocAsk()">Ask OmniCanon</button><div id="oc-out" style="margin-top:14px"></div></div></section>
+<section><h2>🧰 Tech Stack</h2><div><span class="chip">Python</span><span class="chip">multi-faith text corpus</span><span class="chip">zero-hallucination RAG (citation-verified)</span><span class="chip">TheoBench LLM benchmark</span></div></section>
+<section><h2>🌍 Real-Life Applications</h2><ul class="apps"><li>Students of religion comparing what different scriptures actually say</li><li>Faith communities building trustworthy scripture Q&A tools</li><li>Measuring LLM reliability on religious content (TheoBench)</li></ul></section>
+<section><h2>⭐ Support the Project</h2><div class="star-cta">
+<p style="margin-bottom:14px">If this project is useful or interesting to you, <strong>starring ⭐ and forking 🍴 the repo</strong> is the best way to support it and help others find it.</p>
+<div class="btns">
+<a class="btn btn-primary" href="https://github.com/AravindB98/omnicanon/stargazers">⭐ Star</a>
+<a class="btn btn-ghost" href="https://github.com/AravindB98/omnicanon/fork">🍴 Fork</a>
+<a class="btn btn-ghost" href="https://github.com/AravindB98/omnicanon/issues">💬 Contribute</a>
+</div></div></section>
+</div>
+<footer>Built by <a href="https://github.com/AravindB98">Aravind Balaji</a> · <a href="https://aravindbalaji.com">aravindbalaji.com</a> · <a href="https://medium.com/@aravindbalaji25">Medium</a></footer>
+<script>
+
+const OC={0:[["Bible — Matthew 6:14","\"For if you forgive other people when they sin against you, your heavenly Father will also forgive you.\""],["Quran — 42:40","\"…but whoever pardons and makes reconciliation, his reward is with Allah.\""],["Gita — 16:3","Forgiveness is listed among the divine qualities of the righteous."]],
+1:[["Bible — Proverbs 19:17","\"Whoever is kind to the poor lends to the Lord…\""],["Quran — 2:261","Charity is likened to a grain growing seven ears, each with a hundred grains."],["Torah — Deut. 15:11","\"…open your hand to the poor and needy in your land.\""]],
+2:[["Quran — 2:153","\"Indeed, Allah is with the patient.\""],["Bible — James 1:4","\"Let perseverance finish its work so that you may be mature…\""],["Gita — 2:14","Sense experiences come and go; one is urged to endure them patiently."]]};
+function ocAsk(){const i=document.getElementById('oc-q').selectedIndex,o=document.getElementById('oc-out');
+o.innerHTML='<p class="mono" style="color:var(--muted)">⏳ Retrieving from verified corpus…</p>';
+setTimeout(()=>{o.innerHTML=OC[i].map(v=>'<div style="border-left:3px solid var(--accent);padding:8px 14px;margin:8px 0;background:#0a0e14;border-radius:0 8px 8px 0"><strong>'+v[0]+'</strong><p style="color:var(--muted)">'+v[1]+'</p></div>').join('')+'<p class="mono" style="color:#3fb950;margin-top:8px">✓ 3/3 sentences citation-verified · 0 unsupported claims</p>';},900);}
+
+</script>
+</body>
+</html>
